@@ -8,6 +8,7 @@ class Homepage:
         self.create_home()
 
     def create_home(self):
+<<<<<<< HEAD
         # Venstre ramme (blå) som fyller hele vinduet i starten
         self.left_frame = tk.Frame(self.test, bg='lightblue')
         self.left_frame.pack(side="left", fill="both", expand=True)
@@ -45,4 +46,12 @@ class Homepage:
 test = tk.Tk()
 app = Homepage(test)
 test.geometry("800x800")  # Sett størrelse på vinduet
+=======
+        homepage_frame = tk.Frame(self.test, bg='lightblue')
+        homepage_frame.pack(side="left", fill="both", expand=True)
+
+test = tk.Tk()
+app = Homepage(test)
+test.geometry("800x800")
+>>>>>>> origin/Develop
 test.mainloop()
