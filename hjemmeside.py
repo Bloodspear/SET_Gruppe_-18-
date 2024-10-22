@@ -20,6 +20,16 @@ class Homepage:
         button1.place(x=50, y=50, width=100, height=100)
         button2 = tk.Button(self.left_frame, text="Button 2",bg='red',activebackground='green', command=self.button2_clicked)
         button2.place(x=200, y=50, width=100, height=100)
+        button3 = tk.Button(self.left_frame, text="Kjøleskap", bg='red', activebackground='green', command=self.button2_clicked)
+        button3.place(x=50, y=200, width=100, height=100)
+        button4 = tk.Button(self.left_frame, text="Telefon", bg='red', activebackground='green', command=self.button2_clicked)
+        button4.place(x=200, y=200, width=100, height=100)
+        button5 = tk.Button(self.left_frame, text="Printer", bg='red', activebackground='green', command=self.button2_clicked)
+        button5.place(x=200, y=200, width=100, height=100)
+        button6 = tk.Button(self.left_frame, text="Kamera", bg='red', activebackground='green', command=self.button2_clicked)
+        button6.place(x=50, y=350, width=100, height=100)
+        button7 = tk.Button(self.left_frame, text="Vifte", bg='red', activebackground='green', command=self.button2_clicked)
+        button7.place(x=200, y=350, width=100, height=100)
 
     def button1_clicked(self):
         self.show_right_frame("You clicked Button 1")
