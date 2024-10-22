@@ -16,9 +16,9 @@ class Homepage:
         self.right_frame = tk.Frame(self.test, bg='white')
 
         # Knapper i den lyseblå rammen
-        button1 = tk.Button(self.left_frame, text="Button 1",bg='red',activebackground='green', command=self.button1_clicked)
+        button1 = tk.Button(self.left_frame, text="PC",bg='red',activebackground='green', command=self.button1_clicked)
         button1.place(x=50, y=50, width=100, height=100)
-        button2 = tk.Button(self.left_frame, text="Button 2",bg='red',activebackground='green', command=self.button2_clicked)
+        button2 = tk.Button(self.left_frame, text="Tablet",bg='red',activebackground='green', command=self.button2_clicked)
         button2.place(x=200, y=50, width=100, height=100)
         button3 = tk.Button(self.left_frame, text="Kjøleskap", bg='red', activebackground='green', command=self.button2_clicked)
         button3.place(x=50, y=200, width=100, height=100)
