@@ -59,7 +59,7 @@ class Homepage:
             widget.destroy()
 
         # overskrift med enhetsnavn
-        title_label = tk.Label(self.right_frame, text=device_name, bg='white', font=("Helvetica", 16))
+        title_label = tk.Label(self.right_frame, text=device_name, bg='white', font=("Helvetica", 20))
         title_label.place(relx=0.5, y=20, anchor=tkinter.CENTER)
 
         # temperature
@@ -83,7 +83,7 @@ class Homepage:
         self.light_button.place(relx=0.5, y=210, width=100, height=50, anchor=tkinter.CENTER)
 
         #Produktinformasjon
-        info_label = tk.Label(self.right_frame, text="Produktinformasjon:")
+        info_label = tk.Label(self.right_frame, text="Produktinformasjon:", font=("Helvetica", 12))
         info_label.place(relx=0.5, y=280, anchor=tkinter.CENTER)
 
         produktinfo_tekst = (
