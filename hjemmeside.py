@@ -9,24 +9,24 @@ class Homepage:
 
     def create_home(self):
         # Venstre del
-        self.left_frame = tk.Frame(self.test, bg='lightblue')
+        self.left_frame = tk.Frame(self.test, bg='grey65')
         self.left_frame.pack(side="left", fill="both", expand=True)
 
         # Høyre del
         self.right_frame = tk.Frame(self.test, bg='white')
 
         # Knapper i høyre del
-        pc = tk.Button(self.left_frame, text="PC", bg='red', activebackground='green', command=self.pc_clicked)
+        pc = tk.Button(self.left_frame, text="PC", bg='white', activebackground='grey', command=self.pc_clicked)
         pc.place(x=50, y=50, width=100, height=100)
-        tablet = tk.Button(self.left_frame, text="Tablet", bg='red', activebackground='green', command=self.tablet_clicked)
+        tablet = tk.Button(self.left_frame, text="Tablet", bg='white', activebackground='grey', command=self.tablet_clicked)
         tablet.place(x=200, y=50, width=100, height=100)
-        kjoleskap = tk.Button(self.left_frame, text="Kjøleskap", bg='red', activebackground='green', command=self.kjoleskap_clicked)
+        kjoleskap = tk.Button(self.left_frame, text="Kjøleskap", bg='white', activebackground='grey', command=self.kjoleskap_clicked)
         kjoleskap.place(x=50, y=200, width=100, height=100)
-        printer = tk.Button(self.left_frame, text="Printer", bg='red', activebackground='green', command=self.printer_clicked)
+        printer = tk.Button(self.left_frame, text="Printer", bg='white', activebackground='grey', command=self.printer_clicked)
         printer.place(x=200, y=200, width=100, height=100)
-        kamera = tk.Button(self.left_frame, text="Kamera", bg='red', activebackground='green', command=self.kamera_clicked)
+        kamera = tk.Button(self.left_frame, text="Kamera", bg='white', activebackground='grey', command=self.kamera_clicked)
         kamera.place(x=50, y=350, width=100, height=100)
-        vifte = tk.Button(self.left_frame, text="Vifte", bg='red', activebackground='green', command=self.vifte_clicked)
+        vifte = tk.Button(self.left_frame, text="Vifte", bg='white', activebackground='grey', command=self.vifte_clicked)
         vifte.place(x=200, y=350, width=100, height=100)
 
     # Funksjoner for knapper
@@ -69,10 +69,10 @@ class Homepage:
 
         # knapper for temperatur
         increase_button = tk.Button(self.right_frame, text="+", command=self.increase_temp, bg='tomato')
-        increase_button.place(relx=0.45, y=100, width=25, height=25,anchor=tkinter.CENTER)
+        increase_button.place(relx=0.55, y=100, width=25, height=25,anchor=tkinter.CENTER)
 
         decrease_button = tk.Button(self.right_frame, text="-", command=self.decrease_temp, bg='cyan')
-        decrease_button.place(relx=0.55, y=100, width=25, height=25,anchor=tkinter.CENTER)
+        decrease_button.place(relx=0.45, y=100, width=25, height=25,anchor=tkinter.CENTER)
 
         # Lys status og knapp
         self.light_status = "Av"
