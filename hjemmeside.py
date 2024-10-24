@@ -75,11 +75,12 @@ class Homepage:
         decrease_button.place(relx=0.45, y=100, width=25, height=25,anchor=tkinter.CENTER)
 
         # Lys status og knapp
+        self.farge = "gray40"
         self.light_status = "Av"
         self.light_label = tk.Label(self.right_frame, text=f"Lys: {self.light_status}")
         self.light_label.place(relx=0.5, y=170, anchor=tkinter.CENTER)
 
-        self.light_button = tk.Button(self.right_frame, text="Endre lys", command=self.toggle_light)
+        self.light_button = tk.Button(self.right_frame, text="Endre lys", command=self.toggle_light, bg=self.farge)
         self.light_button.place(relx=0.5, y=210, width=100, height=50, anchor=tkinter.CENTER)
 
         #Produktinformasjon
@@ -112,9 +113,12 @@ class Homepage:
     def toggle_light(self):
         if self.light_status == "Av":
             self.light_status = "På"
+            self.farge = "gold"
         else:
             self.light_status = "Av"
+            self.farge = "gray40"
         self.light_label.config(text=f"Lys: {self.light_status}")
+        self.light_button.config(bg=self.farge)
 
 
 # starter hovedvindu
