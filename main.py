@@ -1,1 +1,8 @@
-# hjemmeside.py blir gjort om løs koblet kode. Henter kode fra hemmeside.py
+import tkinter as tk
+from hjemmeside import Homepage
+
+# Starter hovedvindu
+test = tk.Tk()
+app = Homepage(test)
+test.geometry("800x800")  # Størrelse på vinduet
+test.mainloop()
