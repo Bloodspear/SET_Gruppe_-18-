@@ -1,8 +1,8 @@
 import tkinter as tk
-from hjemmeside import Homepage
+from hjemmeside import Hjemmeside
 
-# Starter hovedvindu
-test = tk.Tk()
-app = Homepage(test)
-test.geometry("800x800")  # Størrelse på vinduet
-test.mainloop()
+#starter applikasjonen
+root = tk.Tk()
+app = Hjemmeside(root)
+root.geometry("800x800")
+root.mainloop()

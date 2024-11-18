@@ -1,21 +1,18 @@
 import tkinter as tk
 from enheter import Enheter
-from enhetskontroll import Enhetskontroll
 
-class Homepage:
-    def __init__(self, test):
-        self.test = test
-        self.test.title("Home")
+class Hjemmeside:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("Home")
+        self.enheter = Enheter(self.root)
         self.create_home()
 
     def create_home(self):
-        # Venstre del
-        self.left_frame = tk.Frame(self.test, bg='grey65')
+        self.left_frame = tk.Frame(self.root, bg='grey65')
         self.left_frame.pack(side="left", fill="both", expand=True)
-
-        # Høyre del
-        self.right_frame = tk.Frame(self.test, bg='white')
-
-        # Knapper i høyre del
-        self.enheter = Enheter(self)
-        self.enheter.create_buttons(self.left_frame)
+        header_label = tk.Label(self.left_frame, text="Smart Enheter", font=("Helvetica", 20), bg='grey65')
+        header_label.pack(pady=20)
+        self.legg_til_knapp = tk.Button(self.left_frame, text="Legg til enhet", bg='white', activebackground='grey',
+                                    command=self.enheter.legg_til_knapp_klikk)
+        self.legg_til_knapp.place(relx=0.5, rely=0.8, anchor=tk.CENTER)
