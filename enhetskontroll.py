@@ -48,9 +48,34 @@ class Enhetskontroll:
         decrease_knapp = tk.Button(self.right_frame, text="-", command=self.decrease_temp, bg='cyan')
         decrease_knapp.place(relx=0.45, y=160, width=25, height=25, anchor=tk.CENTER)
 
+        info_label = tk.Label(self.right_frame, text="Produktinformasjon:", font=("Helvetica", 12))
+        info_label.place(relx=0.5, y=280, anchor=tk.CENTER)
+        info_label.place(relx=0.5, y=280, anchor=tk.CENTER)
+
+        produktinfo_tekst = (
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum risus enim, "
+            "ut condimentum sapien euismod vitae. Aenean eleifend cursus iaculis. Praesent pellentesque "
+            "tempor odio, eget convallis magna ornare quis. Donec interdum ut orci a euismod. Donec in ")
+
+        infopanel = tk.Label(self.right_frame, text=produktinfo_tekst, bg="white",wraplength=300,justify="left")
+        infopanel.place(relx=0.5, y=350, anchor=tk.CENTER)
+
+
     def lys_funskjoner(self):
         on_off_button = tk.Button(self.right_frame, text="På/Av", command=self.on_off_bryter, bg='tomato')
-        on_off_button.place(relx=0.5, y=60, width=100, height=30, anchor=tk.CENTER)
+        on_off_button.place(relx=0.5, y=60, width=100, height=30, anchor=tk.CENTER)     
+
+        info_label = tk.Label(self.right_frame, text="Produktinformasjon:", font=("Helvetica", 12))
+        info_label.place(relx=0.5, y=280, anchor=tk.CENTER)
+        info_label.place(relx=0.5, y=280, anchor=tk.CENTER)
+
+        produktinfo_tekst = (
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum risus enim, "
+            "ut condimentum sapien euismod vitae. Aenean eleifend cursus iaculis. Praesent pellentesque "
+            "tempor odio, eget convallis magna ornare quis. Donec interdum ut orci a euismod. Donec in ")
+
+        infopanel = tk.Label(self.right_frame, text=produktinfo_tekst, bg="white",wraplength=300,justify="left")
+        infopanel.place(relx=0.5, y=350, anchor=tk.CENTER)   
         
         farge_knapp = tk.Button(self.right_frame, text="Endre farge", command=self.endre_lysfarge, bg='yellow')
         farge_knapp.place(relx=0.5, y=120, width=100, height=30, anchor=tk.CENTER)
@@ -58,6 +83,18 @@ class Enhetskontroll:
     def stikkontakt_funskjoner(self):
         on_off_button = tk.Button(self.right_frame, text="På/Av", command=self.on_off_bryter, bg='tomato')
         on_off_button.place(relx=0.5, y=60, width=100, height=30, anchor=tk.CENTER)
+
+        info_label = tk.Label(self.right_frame, text="Produktinformasjon:", font=("Helvetica", 12))
+        info_label.place(relx=0.5, y=280, anchor=tk.CENTER)
+        info_label.place(relx=0.5, y=280, anchor=tk.CENTER)
+
+        produktinfo_tekst = (
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum elementum risus enim, "
+            "ut condimentum sapien euismod vitae. Aenean eleifend cursus iaculis. Praesent pellentesque "
+            "tempor odio, eget convallis magna ornare quis. Donec interdum ut orci a euismod. Donec in ")
+
+        infopanel = tk.Label(self.right_frame, text=produktinfo_tekst, bg="white",wraplength=300,justify="left")
+        infopanel.place(relx=0.5, y=350, anchor=tk.CENTER)
 
     def remove_device(self):
         self.enhetsknapp.destroy()
@@ -86,3 +123,4 @@ class Enhetskontroll:
 
     def endre_lysfarge(self):
         print("Endre lysfarge")
+
