@@ -44,7 +44,7 @@ class TestPrototype(unittest.TestCase):
         with self.assertRaises(Exception):
             enheter.legg_til_enhet(add_window)
 
-# sjekker om den Ã¸ker temperatur
+# sjekker om den increaser temperatur
     def test_increase_temp(self):
         right_frame = tk.Frame(self.root)
         enhetskontroll = Enhetskontroll(right_frame, "Varmeovn", "Stue", None, [], None)
