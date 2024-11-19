@@ -35,7 +35,8 @@ class Enheter:
         if len(self.enhet_knapp) >= 6:
             print("Maks 6 enheter tillatt.")
             add_window.destroy()
-            return
+            raise Exception("Kan ikke legge til flere enn 6 enheter.")
+
 
         name = self.name_input.get()
 
